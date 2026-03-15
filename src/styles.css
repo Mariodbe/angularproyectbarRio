@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
 
 :root {
-  --terracota-500: #C45D3E;
+  --terracota-500: #8FBC6A;
 }
 
 * {
@@ -134,7 +134,7 @@ nav .desktop-menu {
 
 /* Buttons */
 .btn-primary {
-  background-color: #C45D3E;
+  background-color: #8FBC6A;
   color: white;
   padding: 12px 24px;
   border-radius: 8px;

@@ -1,7 +1,7 @@
 <section style="padding: 120px 0 48px; text-align: center; background-color: #F7F5F2;">
   <div style="max-width: 800px; margin: 0 auto; padding: 0 16px;">
     <h1 style="font-size: 48px; font-family: 'Playfair Display', serif; font-weight: bold; color: #1A1512; margin-bottom: 16px;">
-      Contacta<span style="color: #C45D3E;">nos</span>
+      Contacta<span style="color: #8FBC6A;">nos</span>
     </h1>
     <p style="color: #5A4538; font-size: 18px;">¿Tienes preguntas? ¿Quieres reservar? Escríbenos o llámanos</p>
   </div>
@@ -38,7 +38,7 @@
             <label style="display: block; color: #1A1512; font-weight: 500; margin-bottom: 8px;">Mensaje *</label>
             <textarea [(ngModel)]="formulario.mensaje" name="mensaje" required rows="4" style="width: 100%; padding: 12px; border: 1px solid #E8E2DB; border-radius: 12px; box-sizing: border-box; resize: vertical;" placeholder="¿En qué podemos ayudarte?"></textarea>
           </div>
-          <button type="submit" [disabled]="enviando()" style="width: 100%; background-color: #C45D3E; color: white; padding: 16px; border-radius: 8px; font-size: 18px; font-weight: 500; border: none; cursor: pointer;">
+          <button type="submit" [disabled]="enviando()" style="width: 100%; background-color: #8FBC6A; color: white; padding: 16px; border-radius: 8px; font-size: 18px; font-weight: 500; border: none; cursor: pointer;">
             @if (enviando()) { Enviando... } @else { Enviar Mensaje }
           </button>
         </form>
@@ -62,7 +62,7 @@
               <div style="width: 48px; height: 48px; background-color: rgba(196,93,62,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">📞</div>
               <div>
                 <div style="font-weight: 500; color: #1A1512;">Teléfono</div>
-                <a [href]="'tel:' + telefono" style="color: #C45D3E; text-decoration: none;">{{ telefono }}</a>
+                <a [href]="'tel:' + telefono" style="color: #8FBC6A; text-decoration: none;">{{ telefono }}</a>
               </div>
             </div>
 
@@ -70,7 +70,7 @@
               <div style="width: 48px; height: 48px; background-color: rgba(196,93,62,0.2); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">✉️</div>
               <div>
                 <div style="font-weight: 500; color: #1A1512;">Email</div>
-                <a [href]="'mailto:' + email" style="color: #C45D3E; text-decoration: none;">{{ email }}</a>
+                <a [href]="'mailto:' + email" style="color: #8FBC6A; text-decoration: none;">{{ email }}</a>
               </div>
             </div>
 

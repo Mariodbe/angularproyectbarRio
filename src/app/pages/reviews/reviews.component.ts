@@ -9,7 +9,7 @@ import { CommonModule } from '@angular/common';
     <section style="padding: 120px 0 48px; text-align: center; background-color: #F7F5F2;">
       <div style="max-width: 800px; margin: 0 auto; padding: 0 16px;">
         <h1 style="font-size: 48px; font-family: 'Playfair Display', serif; font-weight: bold; color: #1A1512; margin-bottom: 16px;">
-          Nuestras <span style="color: #C45D3E;">Reseñas</span>
+          Nuestras <span style="color: #8FBC6A;">Reseñas</span>
         </h1>
         <p style="color: #5A4538; font-size: 18px;">4.4 ★ Google (más de 100 reseñas)</p>
       </div>
@@ -21,7 +21,7 @@ import { CommonModule } from '@angular/common';
           @for (r of resenas; track r.nombre) {
             <div style="background-color: rgba(74,57,48,0.5); border-radius: 16px; padding: 32px;">
               <div style="display: flex; gap: 4px; margin-bottom: 16px;">
-                @for (s of [1,2,3,4,5]; track s) { <span style="color: #C45D3E;">★</span> }
+                @for (s of [1,2,3,4,5]; track s) { <span style="color: #8FBC6A;">★</span> }
               </div>
               <p style="color: rgba(255,255,255,0.9); margin-bottom: 16px; font-style: italic;">"{{ r.texto }}"</p>
               <div style="color: white; font-weight: 500;">{{ r.nombre }}</div>
@@ -31,7 +31,7 @@ import { CommonModule } from '@angular/common';
         </div>
         
         <div style="text-align: center; margin-top: 48px;">
-          <a href="https://www.google.com/maps/place/BarR%C3%ADo/@40.4137,-3.7193,17z/data=!4m6!3m5!1s0xd4229f31cebe5b7:0x5c20b296cc4c283a!8m2!3d40.4136991!4d-3.7192554!16s%2Fg%2F11f9vw32t9?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="background-color: #C45D3E; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; display: inline-block;">
+          <a href="https://www.google.com/maps/place/BarR%C3%ADo/@40.4137,-3.7193,17z/data=!4m6!3m5!1s0xd4229f31cebe5b7:0x5c20b296cc4c283a!8m2!3d40.4136991!4d-3.7192554!16s%2Fg%2F11f9vw32t9?entry=ttu&g_ep=EgoyMDI2MDMxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="background-color: #8FBC6A; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; display: inline-block;">
             Ver todas las reseñas en Google Maps →
           </a>
         </div>

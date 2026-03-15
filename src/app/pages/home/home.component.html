@@ -46,8 +46,8 @@
 <section style="padding: 80px 0; background-color: #F7F5F2;">
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 16px;">
     <div style="text-align: center; margin-bottom: 64px;">
-      <span style="font-size: 20px; font-family: 'Caveat', cursive; color: #C45D3E;">Nuestras especialidades</span>
-      <h2 style="font-size: 48px; font-family: 'Playfair Display', serif; font-weight: bold; color: #1A1512; margin-bottom: 16px;">Platos que<span style="color: #C45D3E;"> enamoran</span></h2>
+      <span style="font-size: 20px; font-family: 'Caveat', cursive; color: #8FBC6A;">Nuestras especialidades</span>
+      <h2 style="font-size: 48px; font-family: 'Playfair Display', serif; font-weight: bold; color: #1A1512; margin-bottom: 16px;">Platos que<span style="color: #8FBC6A;"> enamoran</span></h2>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
@@ -55,12 +55,12 @@
         <div class="card-menu">
           <div style="position: relative; height: 256px; overflow: hidden;">
             <img [src]="plato.imagen" [alt]="plato.nombre" style="width: 100%; height: 100%; object-fit: cover;">
-            <div style="position: absolute; top: 16px; right: 16px; background-color: #C45D3E; color: white; padding: 4px 12px; border-radius: 9999px; font-size: 14px; font-weight: 500;">⭐ Destacado</div>
+            <div style="position: absolute; top: 16px; right: 16px; background-color: #8FBC6A; color: white; padding: 4px 12px; border-radius: 9999px; font-size: 14px; font-weight: 500;">⭐ Destacado</div>
           </div>
           <div style="padding: 24px;">
             <h3 style="font-size: 20px; font-family: 'Playfair Display', serif; font-weight: bold; color: #1A1512; margin-bottom: 8px;">{{ plato.nombre }}</h3>
             <p style="color: #5A4538; font-size: 14px; margin-bottom: 16px;">{{ plato.descripcion }}</p>
-            <span style="font-size: 24px; font-weight: bold; color: #C45D3E;">{{ plato.precio | currency:'EUR' }}</span>
+            <span style="font-size: 24px; font-weight: bold; color: #8FBC6A;">{{ plato.precio | currency:'EUR' }}</span>
           </div>
         </div>
       }
@@ -79,8 +79,8 @@
 
   <div style="max-width: 1200px; margin: 0 auto; padding: 0 16px; position: relative; z-index: 10;">
     <div style="text-align: center; margin-bottom: 64px;">
-      <span style="font-size: 20px; font-family: 'Caveat', cursive; color: #C45D3E;">Lo que dicen nuestros clientes</span>
-      <h2 style="font-size: 48px; font-family: 'Playfair Display', serif; font-weight: bold; color: white; margin-bottom: 16px;">Reseñas que<span style="color: #C45D3E;"> hablan</span></h2>
+      <span style="font-size: 20px; font-family: 'Caveat', cursive; color: #8FBC6A;">Lo que dicen nuestros clientes</span>
+      <h2 style="font-size: 48px; font-family: 'Playfair Display', serif; font-weight: bold; color: white; margin-bottom: 16px;">Reseñas que<span style="color: #8FBC6A;"> hablan</span></h2>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
@@ -88,12 +88,12 @@
         <div style="background-color: rgba(74,57,48,0.5); border-radius: 16px; padding: 32px; backdrop-filter: blur(10px); border: 1px solid rgba(196,93,62,0.2);">
           <div style="display: flex; gap: 4px; margin-bottom: 16px;">
             @for (star of [1,2,3,4,5]; track star) {
-              <span style="color: #C45D3E;">★</span>
+              <span style="color: #8FBC6A;">★</span>
             }
           </div>
           <p style="color: rgba(255,255,255,0.9); margin-bottom: 24px; font-style: italic;">"{{ resena.texto }}"</p>
           <div style="display: flex; align-items: center; gap: 12px;">
-            <div style="width: 40px; height: 40px; background-color: #C45D3E; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">{{ resena.nombre.charAt(0) }}</div>
+            <div style="width: 40px; height: 40px; background-color: #8FBC6A; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold;">{{ resena.nombre.charAt(0) }}</div>
             <div>
               <div style="color: white; font-weight: 500;">{{ resena.nombre }}</div>
               <div style="color: rgba(255,255,255,0.6); font-size: 14px;">{{ resena.fecha }}</div>
