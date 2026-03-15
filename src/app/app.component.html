@@ -14,7 +14,7 @@
       </div>
 
       <!-- Desktop Menu -->
-      <div class="desktop-menu" style="display: flex; align-items: center; gap: 32px;">
+      <div class="desktop-menu" style="align-items: center; gap: 32px;">
         <a routerLink="/" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;">Inicio</a>
         <a routerLink="/carta" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;">La Carta</a>
         <a routerLink="/resenas" style="color: white; text-decoration: none; font-weight: 500; transition: color 0.3s;">Reseñas</a>
@@ -23,7 +23,7 @@
       </div>
 
       <!-- Mobile Menu Button -->
-      <div class="mobile-menu-btn" style="display: none;">
+      <div class="mobile-menu-btn">
         <button (click)="toggleMenu()" style="background: none; border: none; color: white; padding: 8px; cursor: pointer;">
           <svg style="width: 24px; height: 24px;" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -32,16 +32,16 @@
       </div>
     </div>
   </div>
-
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" style="display: none; background-color: #2E2420; padding: 16px;" [style.display]="isMenuOpen ? 'block' : 'none'">
-    <a routerLink="/" (click)="toggleMenu()" style="display: block; color: white; padding: 12px 0; border-bottom: 1px solid #4A3930;">Inicio</a>
-    <a routerLink="/carta" (click)="toggleMenu()" style="display: block; color: white; padding: 12px 0; border-bottom: 1px solid #4A3930;">La Carta</a>
-    <a routerLink="/resenas" (click)="toggleMenu()" style="display: block; color: white; padding: 12px 0; border-bottom: 1px solid #4A3930;">Reseñas</a>
-    <a routerLink="/contacto" (click)="toggleMenu()" style="display: block; color: white; padding: 12px 0;">Contacto</a>
-  </div>
 </nav>
-
+  <!-- Mobile Menu -->
+  @if (isMenuOpen) {
+    <div style="position: fixed; top: 80px; left: 0; right: 0; background-color: #2E2420; padding: 16px; z-index: 9999;">
+      <a routerLink="/" (click)="toggleMenu()" style="display: block; color: white; padding: 12px 0; border-bottom: 1px solid #4A3930; text-decoration: none;">Inicio</a>
+      <a routerLink="/carta" (click)="toggleMenu()" style="display: block; color: white; padding: 12px 0; border-bottom: 1px solid #4A3930; text-decoration: none;">La Carta</a>
+      <a routerLink="/resenas" (click)="toggleMenu()" style="display: block; color: white; padding: 12px 0; border-bottom: 1px solid #4A3930; text-decoration: none;">Reseñas</a>
+      <a routerLink="/contacto" (click)="toggleMenu()" style="display: block; color: white; padding: 12px 0; text-decoration: none;">Contacto</a>
+    </div>
+  }
 <!-- Main Content -->
 <main style="min-height: 100vh; padding-top: 80px;">
   <router-outlet></router-outlet>

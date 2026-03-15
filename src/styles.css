@@ -62,8 +62,7 @@ nav .desktop-menu {
     display: none !important;
   }
   
-  .mobile-menu-btn,
-  .mobile-menu {
+  .mobile-menu-btn {
     display: block !important;
   }
   

@@ -17,5 +17,6 @@ export class AppComponent {
 
   toggleMenu() {
     this.isMenuOpen = !this.isMenuOpen;
+    console.log('Menu abierto:', this.isMenuOpen);
   }
 }
